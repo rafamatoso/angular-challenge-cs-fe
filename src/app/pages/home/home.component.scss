@@ -5,6 +5,7 @@ $black: #000000;
 
 .container-home {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 90vh;
@@ -14,11 +15,10 @@ $black: #000000;
     font-size: 60px;
     font-weight: normal;
     color: $black;
+    margin-bottom: 10px;
 
     span {
       font-family: Raleway;
-      font-style: italic;
-      font-weight: 200;
       margin-left: 10px;
     }
   }
