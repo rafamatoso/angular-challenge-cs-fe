@@ -1,0 +1,41 @@
+$purple: #ac53f2;
+$gray: #5c5c5c;
+$white: #ffffff;
+$black: #000000;
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 50px;
+  @media only screen and (min-width: 750px) {
+    width: 650px;
+  }
+  width: 390px;
+  font-size: 20px;
+  font-weight: 300;
+  color: $gray;
+  box-sizing: border-box;
+  padding: 0 1rem;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: $purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ic-search {
+  width: 30px;
+  height: 30px;
+  box-shadow: 0 0 4px NaNpx var(--black-40);
+}
