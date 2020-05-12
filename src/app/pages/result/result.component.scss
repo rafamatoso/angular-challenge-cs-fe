@@ -1,39 +1,44 @@
 $color1: #ac53f2;
-.content-result {
+
+.container-result {
   display: flex;
   box-sizing: border-box;
   padding: 35px 50px;
+
   .sidenav-user {
     width: 300px;
+
     h1 {
       font-family: Monaco;
       font-size: 40px;
-      color: #000;
+      font-weight: normal;
       outline: none;
       cursor: pointer;
+
       span {
-        font-family: Raleway;
-        font-weight: 200;
-        font-style: italic;
-        font-size: 1em;
-        color: #000;
+        font-family: RalewayExtraLightItalic;
+        margin-left: 10px;
       }
     }
   }
+
   .repos-user {
     width: calc(100% - 300px);
     box-sizing: border-box;
     padding: 0 55px;
+
     .form-search {
       max-width: 750px;
       width: 100%;
       box-sizing: border-box;
     }
+
     .content-repos {
       padding-top: 53px;
     }
   }
 }
+
 .not-found {
   display: flex;
   justify-content: center;
@@ -45,6 +50,7 @@ $color1: #ac53f2;
     color: $color1;
   }
 }
+
 .loader {
   display: flex;
   justify-content: center;
@@ -52,11 +58,13 @@ $color1: #ac53f2;
   padding: 150px 0;
   box-sizing: 0;
 }
+
 .lds-dual-ring {
   display: inline-block;
   width: 64px;
   height: 64px;
 }
+
 .lds-dual-ring:after {
   content: " ";
   display: block;
@@ -68,6 +76,7 @@ $color1: #ac53f2;
   border-color: $color1 transparent $color1 transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
+
 @keyframes lds-dual-ring {
   0% {
     transform: rotate(0deg);
