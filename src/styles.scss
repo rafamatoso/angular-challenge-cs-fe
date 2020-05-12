@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  // font-size: 20px;
   font-family: "Raleway", sans-serif;
 }
 
@@ -24,4 +23,9 @@ div {
 @font-face {
   font-family: Monaco;
   src: url(assets/fonts/monaco.ttf);
+}
+
+@font-face {
+  font-family: Raleway;
+  src: url(assets/fonts/Raleway-Regular.ttf);
 }
