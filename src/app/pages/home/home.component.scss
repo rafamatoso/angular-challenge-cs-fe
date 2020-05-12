@@ -1,0 +1,25 @@
+$purple: #ac53f2;
+$gray: #5c5c5c;
+$white: #ffffff;
+$black: #000000;
+
+.container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  h1 {
+    font-family: Monaco;
+    font-size: 60px;
+    font-weight: normal;
+    color: $black;
+
+    span {
+      font-family: Raleway;
+      font-style: italic;
+      font-size: 1em;
+      margin-left: 10px;
+    }
+  }
+}

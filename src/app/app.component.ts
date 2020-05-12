@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styles: []
 })
-export class AppComponent {
-  title = 'challenge-concrete-fe';
-}
+export class AppComponent {}
