@@ -1,5 +1,9 @@
 # ChallengeConcreteFe
 
+![GitHub top language](https://img.shields.io/github/languages/top/rafamatoso/angular-challenge-cs-fe)
+![GitHub last commit](https://img.shields.io/github/last-commit/rafamatoso/angular-challenge-cs-fe)
+![GitHub repo size](https://img.shields.io/github/repo-size/rafamatoso/angular-challenge-cs-fe)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
 
 ## Development server
