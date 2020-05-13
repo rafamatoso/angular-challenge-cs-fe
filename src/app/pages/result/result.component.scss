@@ -1,4 +1,4 @@
-$color1: #ac53f2;
+$purple: #ac53f2;
 
 .container-result {
   display: flex;
@@ -72,7 +72,7 @@ $color1: #ac53f2;
     margin: 210px 0 0;
     font-family: Raleway;
     font-size: 40px;
-    color: $color1;
+    color: $purple;
   }
 }
 
@@ -97,8 +97,8 @@ $color1: #ac53f2;
   height: 46px;
   margin: 1px;
   border-radius: 50%;
-  border: 5px solid $color1;
-  border-color: $color1 transparent $color1 transparent;
+  border: 5px solid $purple;
+  border-color: $purple transparent $purple transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 
