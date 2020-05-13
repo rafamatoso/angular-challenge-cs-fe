@@ -1,1 +1,36 @@
-<p>user works!</p>
+<div class="container-user">
+  <img src="{{ user.avatar_url }}" alt="" width="280px" height="280px" />
+  <h1>{{ user.name }}</h1>
+  <label>{{ user.login }}</label>
+  <p>
+    <img
+      src="assets/icons/organization.svg"
+      class="ic-company"
+      title="Company"
+    />{{ user.company }}
+  </p>
+  <p>
+    <img
+      src="assets/icons/location.svg"
+      class="ic-location"
+      title="Location"
+    />{{ user.location }}
+  </p>
+  <p>
+    <img src="assets/icons/star.svg" class="ic-gists" title="Gists" />{{
+      user.public_gists | number
+    }}
+  </p>
+  <p>
+    <img src="assets/icons/repositorie.svg" class="ic-repos" title="Repos" />{{
+      user.public_repos | number
+    }}
+  </p>
+  <p>
+    <img
+      src="assets/icons/followers.svg"
+      class="ic-followers"
+      title="Followers"
+    />{{ user.followers | number }}
+  </p>
+</div>

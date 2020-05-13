@@ -1,0 +1,42 @@
+$gray: #5c5c5c;
+$black: #000000;
+
+.ic-company,
+.ic-location,
+.ic-followers,
+.ic-repos,
+.ic-gists {
+  min-width: 24px;
+  min-height: 24px;
+  display: inline-block;
+  padding-right: 0.5rem;
+}
+
+.container-user {
+  padding: 2rem 0;
+  font-weight: 300;
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    font-size: 35px;
+    font-weight: 300;
+    color: $black;
+    margin-bottom: 0.5rem;
+  }
+
+  label {
+    font-size: 20px;
+    color: $gray;
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+
+  p {
+    display: flex;
+    font-size: 20px;
+    color: $gray;
+  }
+}
