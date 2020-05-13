@@ -14,11 +14,11 @@ input {
   @media only screen and (max-width: 750px) {
     min-width: 150px;
   }
+  box-sizing: border-box;
   width: 650px;
   font-size: 20px;
   font-weight: 300;
   color: $gray;
-  box-sizing: border-box;
   padding: 0 1rem;
 }
 
@@ -33,6 +33,9 @@ button {
   align-items: center;
   min-width: 50px;
   cursor: pointer;
+  &:hover {
+    opacity: 0.9;
+  }
 }
 
 .ic-search {
