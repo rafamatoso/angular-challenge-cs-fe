@@ -11,10 +11,10 @@ form {
 
 input {
   height: 50px;
-  @media only screen and (min-width: 750px) {
-    width: 650px;
+  @media only screen and (max-width: 750px) {
+    min-width: 150px;
   }
-  width: 390px;
+  width: 650px;
   font-size: 20px;
   font-weight: 300;
   color: $gray;
@@ -31,7 +31,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 100px;
+  min-width: 50px;
   cursor: pointer;
 }
 

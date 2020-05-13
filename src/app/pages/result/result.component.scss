@@ -10,7 +10,19 @@ $color1: #ac53f2;
   .sidenav-user {
     width: 300px;
 
+    img {
+      @media only screen and (min-width: 715px) {
+        display: none;
+      }
+      padding-left: 5rem;
+      width: 48px;
+      height: 48px;
+    }
+
     h1 {
+      @media only screen and (max-width: 715px) {
+        display: none;
+      }
       font-family: Monaco;
       font-size: 40px;
       font-weight: normal;
@@ -34,7 +46,6 @@ $color1: #ac53f2;
         width: 750px;
         box-sizing: border-box;
       }
-
       width: 100%;
       box-sizing: border-box;
     }
@@ -49,8 +60,9 @@ $color1: #ac53f2;
   display: flex;
   justify-content: center;
   align-items: center;
+
   h2 {
-    margin: 5rem 0 0;
+    margin: 210px 0 0;
     font-family: Raleway;
     font-size: 40px;
     color: $color1;
