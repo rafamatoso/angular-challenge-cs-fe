@@ -10,6 +10,7 @@ import { SearchService } from './components/search/search.service';
 import { ResultComponent } from './pages/result/result.component';
 import { UserComponent } from './components/user/user.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReposComponent } from './components/repos/repos.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     SearchComponent,
     ResultComponent,
-    UserComponent
+    UserComponent,
+    ReposComponent
   ],
   imports: [
     BrowserModule,

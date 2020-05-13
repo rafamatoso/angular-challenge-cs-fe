@@ -8,7 +8,7 @@
       <app-search [userName]="userName"></app-search>
     </div>
     <div *ngIf="user" class="content-repos">
-      <!-- <app-repos *ngFor="let repo of user.repos" [repo]="repo"></app-repos> -->
+      <app-repos *ngFor="let repo of user.repos" [repo]="repo"></app-repos>
     </div>
   </div>
 </div>

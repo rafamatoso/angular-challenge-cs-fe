@@ -1,0 +1,33 @@
+$purple: #ac53f2;
+$gray: #5c5c5c;
+$white: #ffffff;
+$black: #000000;
+
+.ic-star {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+h2 {
+  font-size: 35px;
+  font-weight: normal;
+  color: $purple;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+
+  img {
+    margin-right: 0.5rem;
+  }
+
+  &.label-star {
+    color: $black;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+  }
+}

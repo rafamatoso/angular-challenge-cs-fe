@@ -2,6 +2,8 @@ $color1: #ac53f2;
 
 .container-result {
   display: flex;
+  flex: 1;
+  justify-content: center;
   box-sizing: border-box;
   padding: 35px 50px;
 
@@ -28,7 +30,11 @@ $color1: #ac53f2;
     padding: 0 55px;
 
     .form-search {
-      max-width: 750px;
+      @media only screen and (min-width: 1200px) {
+        width: 750px;
+        box-sizing: border-box;
+      }
+
       width: 100%;
       box-sizing: border-box;
     }
@@ -44,7 +50,7 @@ $color1: #ac53f2;
   justify-content: center;
   align-items: center;
   h2 {
-    margin: 210px 0 0;
+    margin: 5rem 0 0;
     font-family: Raleway;
     font-size: 40px;
     color: $color1;
