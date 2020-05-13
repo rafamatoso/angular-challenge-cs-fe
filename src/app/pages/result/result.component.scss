@@ -2,56 +2,63 @@ $color1: #ac53f2;
 
 .container-result {
   display: flex;
-  flex: 1;
-  justify-content: center;
+  flex-direction: column;
   box-sizing: border-box;
   padding: 35px 50px;
 
-  .sidenav-user {
-    width: 300px;
+  .content-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
 
-    img {
-      @media only screen and (min-width: 715px) {
-        display: none;
+    .title {
+      width: 300px;
+      h1 {
+        @media only screen and (max-width: 800px) {
+          display: none;
+        }
+        font-family: Monaco;
+        font-size: 40px;
+        font-weight: normal;
+        outline: none;
+        cursor: pointer;
+
+        span {
+          font-family: RalewayExtraLightItalic;
+          margin-left: 10px;
+        }
       }
-      padding-left: 5rem;
-      width: 48px;
-      height: 48px;
     }
 
-    h1 {
-      @media only screen and (max-width: 715px) {
-        display: none;
+    .form-search {
+      @media only screen and (min-width: 800px) {
+        min-width: 500px;
+        max-width: 750px;
+        box-sizing: border-box;
+        padding: 0 55px;
       }
-      font-family: Monaco;
-      font-size: 40px;
-      font-weight: normal;
-      outline: none;
-      cursor: pointer;
-
-      span {
-        font-family: RalewayExtraLightItalic;
-        margin-left: 10px;
-      }
+      max-width: 400px;
+      box-sizing: border-box;
     }
   }
 
-  .repos-user {
-    width: calc(100% - 300px);
-    box-sizing: border-box;
-    padding: 0 55px;
+  .content-body {
+    display: flex;
+    flex-direction: row;
 
-    .form-search {
-      @media only screen and (min-width: 1200px) {
-        width: 750px;
-        box-sizing: border-box;
-      }
-      width: 100%;
-      box-sizing: border-box;
+    .sidenav {
+      width: 300px;
     }
 
-    .content-repos {
-      padding-top: 53px;
+    .repos-user {
+      width: calc(100% - 300px);
+      box-sizing: border-box;
+      padding: 0 55px;
+
+      .content-repos {
+        padding-top: 53px;
+      }
     }
   }
 }

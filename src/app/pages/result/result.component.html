@@ -1,18 +1,20 @@
 <div class="container-result">
-  <div class="sidenav-user">
-    <img
-      src="assets/icons/fluidicon.png"
-      alt="Símbolo representando a logo do Github"
-    />
-    <h1 routerLink="home">Github<span>Search</span></h1>
-    <app-user *ngIf="user" [user]="user"></app-user>
-  </div>
-  <div class="repos-user">
+  <div class="content-header">
+    <div class="title">
+      <h1 routerLink="home">Github<span>Search</span></h1>
+    </div>
     <div class="form-search">
       <app-search [userName]="userName"></app-search>
     </div>
-    <div *ngIf="user" class="content-repos">
-      <app-repos *ngFor="let repo of user.repos" [repo]="repo"></app-repos>
+  </div>
+  <div class="content-body">
+    <div class="sidenav">
+      <app-user *ngIf="user" [user]="user"></app-user>
+    </div>
+    <div class="repos-user">
+      <div *ngIf="user" class="content-repos">
+        <app-repos *ngFor="let repo of user.repos" [repo]="repo"></app-repos>
+      </div>
     </div>
   </div>
 </div>
