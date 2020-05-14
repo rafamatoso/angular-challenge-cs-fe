@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from "@angular/core";
-import { FormBuilder } from "@angular/forms";
+import { Component, OnInit } from "@angular/core";
 import { Router } from "@angular/router";
 import { SearchService } from "./search.service";
 
@@ -9,22 +8,19 @@ import { SearchService } from "./search.service";
   styleUrls: ["./search.component.scss"],
 })
 export class SearchComponent implements OnInit {
-  @Input() userName: string;
-  form: any;
+  userName: string;
 
-  constructor(
-    private searchService: SearchService,
-    private formBuilder: FormBuilder,
-    private router: Router
-  ) {}
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
-    this.form = this.formBuilder.group({
-      userName: [this.userName ? this.userName : ""],
-    });
+    this.userName = this.userName ? this.userName : "";
+  }
+
+  onKey(event: any) {
+    this.userName = event.target.value;
   }
 
   onSubmit(): void {
-    this.router.navigate(["/result", this.form.value.userName]);
+    this.router.navigate(["/result", this.userName]);
   }
 }

@@ -1,10 +1,10 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">
-  <input type="text" formControlName="userName" />
-  <button type="submit">
+<div class="form">
+  <input type="text" (keyup)="onKey($event)" />
+  <button (click)="onSubmit()">
     <img
       src="assets/icons/search.svg"
-      alt="ícone representando uma lupa para buscar um resultado"
+      alt="Ícone representando uma lupa"
       class="ic-search"
     />
   </button>
-</form>
+</div>
