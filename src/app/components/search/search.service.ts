@@ -10,6 +10,7 @@ import { User } from "../user/user.model";
 })
 export class SearchService {
   private user: BehaviorSubject<User> = new BehaviorSubject(undefined);
+  baseUrl: string = "https://api.github.com/users/";
 
   constructor(private http: HttpClient) {}
 
@@ -17,10 +18,10 @@ export class SearchService {
     return this.user.asObservable();
   }
 
-  searchUser(userName) {
+  searchUser(userName: string) {
     this.user.next(undefined);
     this.http
-      .get(`${environment.API_URL}${userName}`)
+      .get(`${this.baseUrl}${userName}`)
       .pipe(
         catchError(() => {
           return of(null);
@@ -38,7 +39,7 @@ export class SearchService {
   getUserRepos(userName: string, user: User): Observable<any> {
     const repos = new BehaviorSubject(null);
     this.http
-      .get(`${environment.API_URL}${userName}/repos`)
+      .get(`${this.baseUrl}${userName}/repos`)
       .pipe(
         catchError(() => {
           return of(null);
