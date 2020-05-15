@@ -11,6 +11,11 @@ $purple: #ac53f2;
     flex-direction: row;
     align-items: center;
     height: 50px;
+    @media only screen and (max-width: 700px) {
+      justify-content: center;
+      padding: 0 0;
+      width: 100%;
+    }
 
     .title {
       width: 300px;
@@ -33,18 +38,21 @@ $purple: #ac53f2;
 
     .form-search {
       @media only screen and (min-width: 800px) {
-        min-width: 500px;
-        max-width: 750px;
+        min-width: 400px;
+        // max-width: 100vw;
         box-sizing: border-box;
         padding: 0 55px;
       }
-      max-width: 400px;
+      max-width: 80vw;
       box-sizing: border-box;
     }
   }
 
   .content-body {
     display: flex;
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+    }
     flex-direction: row;
 
     .sidenav {
@@ -53,6 +61,12 @@ $purple: #ac53f2;
 
     .repos-user {
       width: calc(100% - 300px);
+      @media only screen and (max-width: 700px) {
+        justify-content: center;
+        padding: 0 0;
+
+        width: 100%;
+      }
       box-sizing: border-box;
       padding: 0 55px;
 
