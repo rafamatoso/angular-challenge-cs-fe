@@ -1,10 +1,15 @@
-<div class="form">
-  <input type="text" (keyup)="onKey($event)" [value]="userName" />
-  <button (click)="onSubmit()">
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input
+    type="text"
+    [value]="userName"
+    formControlName="userName"
+    (keyup)="onKey($event)"
+  />
+  <button type="submit" (click)="onSubmit()">
     <img
       src="assets/icons/search.svg"
       alt="Ícone representando uma lupa"
       class="ic-search"
     />
   </button>
-</div>
+</form>

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from "@angular/core";
 import { Router } from "@angular/router";
-import { SearchService } from "./search.service";
+import { FormBuilder } from "@angular/forms";
 
 @Component({
   selector: "app-search",
@@ -9,11 +9,15 @@ import { SearchService } from "./search.service";
 })
 export class SearchComponent implements OnInit {
   @Input("userName") userName: string;
+  form: any;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
     this.userName = this.userName ? this.userName : "";
+    this.form = this.formBuilder.group({
+      userName: this.userName,
+    });
   }
 
   onKey(event: any) {
