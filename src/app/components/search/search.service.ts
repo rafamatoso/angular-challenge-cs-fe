@@ -17,7 +17,7 @@ export class SearchService {
     return this.user.asObservable();
   }
 
-  searchUser(userName: string) {
+  findUser(userName: string) {
     this.user.next(undefined);
     this.http
       .get(`${this.baseUrl}${userName}`)

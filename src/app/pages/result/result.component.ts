@@ -21,7 +21,7 @@ export class ResultComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.sub = this.route.params.subscribe((params) => {
       this.userName = params["query"];
-      this.searchService.searchUser(this.userName);
+      this.searchService.findUser(this.userName);
     });
     this.subUser = this.searchService.getUser().subscribe((user) => {
       this.user = user;

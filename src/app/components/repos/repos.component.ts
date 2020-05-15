@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, Inject } from "@angular/core";
 import { DOCUMENT } from "@angular/common";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "app-repos",
@@ -12,9 +11,7 @@ export class ReposComponent implements OnInit {
 
   constructor(@Inject(DOCUMENT) private document: any) {}
 
-  ngOnInit(): void {
-    console.log(this.repo);
-  }
+  ngOnInit(): void {}
 
   goToGitHubRepo(): void {
     const baseUrl: string = "https://github.com/";

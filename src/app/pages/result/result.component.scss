@@ -59,20 +59,20 @@ $purple: #ac53f2;
       .content-repos {
         padding-top: 53px;
       }
+
+      .not-found {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+          padding: 210px 300px 0 0;
+          font-family: Raleway;
+          font-size: 40px;
+          color: $purple;
+        }
+      }
     }
-  }
-}
-
-.not-found {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  h2 {
-    padding: 210px 300px 0 0;
-    font-family: Raleway;
-    font-size: 40px;
-    color: $purple;
   }
 }
 
@@ -93,10 +93,10 @@ $purple: #ac53f2;
 .lds-dual-ring:after {
   content: " ";
   display: block;
-  width: 46px;
-  height: 46px;
+  width: 50px;
+  height: 50px;
   margin: 1px;
-  border-radius: 50%;
+  border-radius: 100%;
   border: 5px solid $purple;
   border-color: $purple transparent $purple transparent;
   animation: lds-dual-ring 1.2s linear infinite;

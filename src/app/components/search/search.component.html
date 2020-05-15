@@ -1,5 +1,5 @@
 <div class="form">
-  <input type="text" (keyup)="onKey($event)" />
+  <input type="text" (keyup)="onKey($event)" [value]="userName" />
   <button (click)="onSubmit()">
     <img
       src="assets/icons/search.svg"

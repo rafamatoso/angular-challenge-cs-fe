@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 import { Router } from "@angular/router";
 import { SearchService } from "./search.service";
 
@@ -8,7 +8,7 @@ import { SearchService } from "./search.service";
   styleUrls: ["./search.component.scss"],
 })
 export class SearchComponent implements OnInit {
-  userName: string;
+  @Input("userName") userName: string;
 
   constructor(private router: Router) {}
 

@@ -4,7 +4,7 @@
       <h1 routerLink="home">Github<span>Search</span></h1>
     </div>
     <div class="form-search">
-      <app-search></app-search>
+      <app-search [userName]="userName"></app-search>
     </div>
   </div>
   <div class="content-body">
@@ -15,12 +15,13 @@
       <div *ngIf="user" class="content-repos">
         <app-repos *ngFor="let repo of user.repos" [repo]="repo"></app-repos>
       </div>
+      <div *ngIf="user === null" class="not-found">
+        <h2>User not found :(</h2>
+      </div>
     </div>
   </div>
 </div>
-<div *ngIf="user === null" class="not-found">
-  <h2>User not found :(</h2>
-</div>
+
 <div class="loader" *ngIf="user === undefined">
   <div class="lds-dual-ring"></div>
 </div>
